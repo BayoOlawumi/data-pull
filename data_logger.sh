@@ -24,7 +24,7 @@ available_ram ()
 available_disk_size ()
 {
 	# Get available space of the disk
-	local usage=$(df -h | grep -i '/dev/sda2' | awk '{ print $5 }' | cut -d'%' -f1)
+	local usage=$(df -h | grep -i '/dev/sda5' | awk '{ print $5 }' | cut -d'%' -f1)
 	echo $usage
 }
 
